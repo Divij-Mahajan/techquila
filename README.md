@@ -1,8 +1,14 @@
-# React + Vite
+Team Name: Tech-quila
+Project Name: TACT(Triage Assessment & Classification Tool)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ppt : https://drive.google.com/drive/folders/1nTkhW_WHrj0AFCkmif_PITvqsJK4VmaR?lfhs=2
+colab (AI Model): https://colab.research.google.com/drive/1QKzsZnRQ3MDNwB4I0wnEIlMxfR8h-GkE?usp=sharing
+video : https://drive.google.com/drive/folders/1s-tTJYFMXMZJh3ojwFgqAI1S8dNBU-Gh?usp=drive_link
+github : https://github.com/Divij-Mahajan/techquila
+dataset : /triage.csv
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Team Members:
+- Samarth Bhutani
+- Divij Mahajan
+- Prisha Virmani
+- Rhytham Aggarwal
