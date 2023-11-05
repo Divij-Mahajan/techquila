@@ -1,0 +1,20 @@
+#root {
+
+  background-color: var(--lightBlue);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  --darkBlue: #3E4C98;
+  --black: #222222;
+  --lightBlue: #E1E6ED;
+
+}
+
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
