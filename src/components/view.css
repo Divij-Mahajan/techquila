@@ -1,0 +1,103 @@
+.searchbox {
+    color: black;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    height: 2rem;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.Green {
+    color: green;
+}
+
+.Red {
+    color: red;
+}
+
+.Yellow {
+    color: rgb(200, 209, 33);
+}
+
+button:focus {
+    outline: inherit;
+    border: none;
+}
+
+.searchinput {
+    background-color: #D4D1DC;
+    color: black;
+    border: #4F6080 solid;
+    border-width: 2px;
+    width: 100%;
+    outline: none;
+    height: 1rem;
+    margin-left: 1rem;
+    height: auto;
+    border-radius: 10px;
+}
+
+.searchinput:focus {
+    border: #4F6080 solid;
+    outline: inherit;
+
+
+}
+
+.filters {
+    display: flex;
+    list-style: none;
+}
+
+.filter {
+    padding-left: 0.5rem;
+}
+
+.above {
+    margin: 1rem;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.insert {
+    background-color: #5E9185;
+}
+
+.search {
+    background-color: #42A0AD;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+    background-color: #4F6080;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
