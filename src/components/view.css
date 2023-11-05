@@ -11,6 +11,27 @@ button {
     border: none;
 }
 
+.insertblock div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.insertblock div div {
+    display: flex;
+    margin-top: 0.2rem;
+
+}
+
+.insertblock div input {
+    background-color: rgb(229, 227, 227);
+    outline: none;
+    border: 1px solid #4F6080;
+    color: black;
+    border-radius: 5px;
+}
+
 .Green {
     color: green;
 }

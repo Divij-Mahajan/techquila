@@ -9,7 +9,18 @@ function Table() {
     const [data, setData] = useState(d);
     const [tData, setTData] = useState(d);
     const [insertMode, setInsertMode] = useState(false);
-    const [insertValues, setInsertValues] = useState([]);
+    const [age, setage] = useState(0);
+    const [triage_vital_hr, settriage_vital_hr] = useState(0);
+    const [triage_vital_sbp, settriage_vital_sbp] = useState(0);
+    const [triage_vital_dbp, settriage_vital_dbp] = useState(0);
+    const [triage_vital_rr, settriage_vital_rr] = useState(0);
+    const [triage_vital_o2, settriage_vital_o2] = useState(0);
+    const [triage_vital_temp, settriage_vital_temp] = useState(0);
+
+
+
+
+
     const triage = ["Red", "Yellow", "Green"];
     return (
         <>
@@ -47,15 +58,52 @@ function Table() {
                     setData(() => { return d });
                     setInput("")
                 }}>Search</button>
-                <button className='insert' onClick={() => { setInsertMode(true) }}>Insert</button>
+                <button className='insert' onClick={() => {
+                    if (insertMode == false) {
+                        setInsertMode(true);
+                    } else {
+                        let result = [age,
+                            triage_vital_hr,
+                            triage_vital_sbp,
+                            triage_vital_dbp,
+                            triage_vital_rr,
+                            triage_vital_o2,
+                            triage_vital_temp]
+                        let esi = 1;
+                        //result can be pushed
+                        setTData(() => { return [...tData, [esi, ...result]] })
+                        setData(() => { return tData })
+                        setFilter(0)
+                        setInsertMode(false);
+                    }
+
+                }}>Insert</button>
             </div>
             {insertMode && <div className='insertblock'>
-                {data[0].map((d, i) => {
-                    return <div key={i}>
-                        <label>{d} :</label>
-                        <input value={insertValues[i]} onChange={(e) => { return [...insertValues.slice(0, i), e.target.value, ...insertValues(i + 1)] }} />
+                <div >
+                    <div><label>age :</label>
+                        <input value={age} onChange={(e) => { setage(e.target.value) }} />
                     </div>
-                })}
+                    <div><label>triage_vital_hr :</label>
+                        <input value={triage_vital_hr} onChange={(e) => { settriage_vital_hr(e.target.value) }} />
+                    </div>
+                    <div><label>triage_vital_sbp :</label>
+                        <input value={triage_vital_sbp} onChange={(e) => { settriage_vital_sbp(e.target.value) }} />
+                    </div>
+                    <div><label>triage_vital_dbp :</label>
+                        <input value={triage_vital_dbp} onChange={(e) => { settriage_vital_dbp(e.target.value) }} />
+                    </div>
+                    <div><label>triage_vital_rr :</label>
+                        <input value={triage_vital_rr} onChange={(e) => { settriage_vital_rr(e.target.value) }} />
+                    </div>
+                    <div><label>triage_vital_o2 :</label>
+                        <input value={triage_vital_o2} onChange={(e) => { settriage_vital_o2(e.target.value) }} />
+                    </div>
+                    <div><label>triage_vital_temp :</label>
+                        <input value={triage_vital_temp} onChange={(e) => { settriage_vital_temp(e.target.value) }} />
+                    </div>
+                </div>
+
 
             </div>}
             <table>
